@@ -1,3 +1,4 @@
+// Array of Quotes with quote and authors.
 const quotes = [
     {
         quote:'However difficult life may seem, there is always something you can do and succeed at.',
@@ -41,9 +42,12 @@ const quotes = [
     },
 ];
 
+// Selecting tag from HTML. 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
+// Choosing quote randomly
 const todaysQuote =quotes[Math.floor(Math.random()*quotes.length)];
+// Changing text in the HTML
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
