@@ -4,6 +4,8 @@ const loginForm = document.querySelector("#login-form")
 const loginInput = document.querySelector("#login-form input");
 // Selecting tag <h1> tag with 'greeting' id from HTML
 const greeting = document.querySelector("#greeting");
+const todo_form = document.getElementById('todo-form');
+const todo_list = document.getElementById('todo-list');
 
 // Setting constant value
 const HIDDEN_CLASSNAME = "hidden";
@@ -23,6 +25,8 @@ const onLoginSubmit = (event) => {
 const paintGreetings = (username) => {
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+    todo_form.classList.remove(HIDDEN_CLASSNAME);
+    todo_list.classList.remove(HIDDEN_CLASSNAME);
 }
 
 // Checking items saved in the local storage of the browser

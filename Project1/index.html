@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 <body>
-    <h2 id="clock">00:00:00</h2>
+    <div id="clock">
+        <p id="time"></p>
+        <p id="date"></p>
+    </div>
 
     <form id="login-form" class ="hidden">
         <input 
         required 
         maxlength="15" 
         type="text" 
-        placeholder="What is your name?"
+        placeholder="Type your name"
         />
-        <input type="submit" value="Log In" />
+        <input type="submit" value="Log In" /> 
     </form>
 
     <h1 id="greeting" class="hidden"></h1>
-
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required/>
-    </form>
-
-    <ul id="todo-list"></ul>
 
     <div id="quote">
         <span></span>
         <span></span>
     </div>
 
+    <form id="todo-form" class="hidden">
+        <input type="text" placeholder="Write a To Do and Press Enter" required/>
+    </form>
+
+    <ul id="todo-list" class="hidden"></ul>
+
+
+
     <div id="weather">
         <span></span>
+        <img>
         <span></span>
     </div>
     <script src="js/background.js"></script>

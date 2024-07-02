@@ -1,9 +1,164 @@
 body {
     background-size: cover;
+    text-align: center;
+    font-family: roboto;
+    color: whitesmoke;
+    font-size: 16px;
+    position: relative;
 }
-
 
 .hidden {
     display: none;
 }
+
+#clock {
+    position:relative;
+    top: 4rem;
+}
+
+#time {
+    font-size: 4rem;
+    margin:0px;
+}
+
+#date {
+    font-size: 2rem;
+    margin-top:1rem;
+}
+
+#login-form{
+    margin-top: 5rem;
+    color:white;
+    margin:1rem;
+    position: relative;
+    top: 7rem;
+}
+
+#login-form input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size:1rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    margin: 0 1rem;
+    color:white;
+    border: white 0.5px solid;
+    border-radius: 10px;
+}
+
+#login-form input:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#login-form input:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: white 2px solid;
+}
+
+#login-form input::placeholder{
+    color:white;
+    text-align: center;
+}
+
+
+#greeting {
+    position: relative;
+    font-size: 2 rem;
+    top: 7rem;
+}
+
+#weather {
+    position: absolute;
+    font-size: 1 rem;
+    font-weight: 400;
+    top: 0.3rem;
+    right: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+
+#weather img {
+    width:3rem;
+}
+
+#todo-form {
+    position: relative;
+    top: 8rem;
+}
+
+#todo-list {
+    position: relative;
+    top: 9rem;
+}
+
+#quote {
+    position: relative;
+    top: 0.5rem;
+}
+
+
+#todo-form input{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size:1rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    color:white;
+    border: white 0.5px solid;
+    border-radius: 10px;
+    width: 16rem;
+}
+
+#todo-form input::placeholder{
+    color:white;
+    text-align: center;
+}
+
+#todo-form input:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#todo-form input:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: white 2px solid;
+}
+
+#todo-list li {
+    margin-top: 1rem;
+}
+
+#todo-list span {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size:1rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    display: inline-block;
+    width: 15rem;
+    color:white;
+    border: white 0.5px solid;
+    border-radius: 10px;
+}
+
+
+#todo-list button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size:1rem;
+    font-weight: bold;
+    padding: 0.4rem 0.7rem;
+    margin: 0 1rem;
+    color:white;
+    border: white 0.5px solid;
+    border-radius: 10px;
+}
+
+#todo-list button:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
 

@@ -1,3 +1,4 @@
+
 // Array of Quotes with quote and authors.
 const quotes = [
     {
@@ -50,4 +51,4 @@ const author = document.querySelector("#quote span:last-child");
 const todaysQuote =quotes[Math.floor(Math.random()*quotes.length)];
 // Changing text in the HTML
 quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+author.innerText = `-${todaysQuote.author}-`;
